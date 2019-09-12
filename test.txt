@@ -1,0 +1,22 @@
+Bonjour.
+2 Min
+Je vais vous présenter l'analyse fonctionnelle de votre futur logiciel en ligne de pizzeria
+Vous souhaitiez donc un logiciel en ligne de la forme d'un site qui soit capable d'optimiser votre
+gestion des commandes en permettant notamment de les suivre en temps réel, de sivre votre gestion des stock mais aussi consulter un aide mémoire. Du côté de l'expérience utilisateur vous souhaitez que ceux-ci puissent commander directement sur votre site en modifiant s'il le veut la commande à tout moment avant le paiement.
+Je vais donc vous présenter sous la forme de plusieurs diagrammes UML l'analyse fonctionnelle puis techniques de vos besoin afin d'énoncer clairement et de façon détaillé avec vous les fonctions de votre logiciel en ligne de réservation de pizzas : 
+
+Ici voici donc un diagramme de contexte décrivant tous les acteurs que vous connaisez mais aussi le système bancaire intervenant en tant qu'acteur secondaire et intéragira avec votre site au moyen d'une API afin d'éffectuer et de sécuriser les transactions.
+
+Ici on retrouve le système divisé en 2 packages de fonctionnalités : le package achat de pizzas
+et celui de gestions et suivie des commandes, on peut ouvrir ces packages afin de préciser des cas d'utilisations plus précis :
+au sein de l'équipe, On vois ici que pour accéder aux services du site tous les acteurs doivent être connecté. plus précisément le pizzaiolo doit pouvoir consulter un aide mémoire, le gérant réceptionner et suivre les commandes, le livreur lui s'occupe de préparer et d'éffectuer la livraison.
+Le pizzaiolo et le gérant doivent eux par contre avoir un suivi très régulier des stocks d'ingrédients et donc consulter ceux-ci avant de préparer une commande.
+
+je vais maintenant vous montrer de façon très détaillé deux fiches descriptives que vous pourrez retrouvez dans le dossier :
+-Connexion
+-
+
+
+Pour terminer voici une propostion de solutions techniques pour votre logiciel en ligne, celui-ci devant comporter et gérer une importante base de données on pourrait administrer celle-ci avec le langage SQL. Pour la réalisation visible du site, on utiliserais les langages HTML/CSS mais aussi le Javascript afin de dynamiser les pages et mettre en place la première forme d'interaction entre l'utilisateur et le système (pop up).
+
+Le site étant totalement dynamique on utiliserais le langage Python ainsi que son son framework Django afin de générer dynamiquement le contenu HTML en fonction des informations saisies par l'utilisateur.
